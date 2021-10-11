@@ -26,3 +26,9 @@ It was giving me a problem... when it was fixed it looked like this:
 ```js
 console.log('goodbye')
 ```
+
+#### Example Table
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| thing1   | thing 2  | thing 3  |
+| cheese 1 | cheese 2 | cheese 3 |
