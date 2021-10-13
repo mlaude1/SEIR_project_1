@@ -32,3 +32,10 @@ console.log('goodbye')
 |----------|----------|----------|
 | thing1   | thing 2  | thing 3  |
 | cheese 1 | cheese 2 | cheese 3 |
+
+
+<!-- *** CHANGES AND COMMENTS TO BE LOGGED *** -->
+
+- change vanilla styling
+- change 'document.querySelector' to jQuery? ✅
+- some of the answers overflow out of its border
