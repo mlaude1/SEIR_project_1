@@ -39,3 +39,4 @@ console.log('goodbye')
 - change vanilla styling
 - change 'document.querySelector' to jQuery? ✅
 - some of the answers overflow out of its border
+- iterate through the array (go through all 20 questions)

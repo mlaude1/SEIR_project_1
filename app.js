@@ -3,7 +3,8 @@
 const state = {
     player1: 0,
     player2: 0,
-    currentQuestion: {}
+    // currentQuestion: {},
+    which: true
 }
 
 let questions = []
@@ -23,7 +24,21 @@ const $p2score = $('#player2 h4')
 
 const chooseAnswer = (event, question) => {
     console.log(event)
-    // if(event.target.innerText === )
+    if(event.target.innerText === question.answer) {
+        console.log("correct")
+        if (state.which) {
+            state.player1++
+            state.which = !state.which
+        } else {  
+            state.player2++
+            state.which = !state.which
+        }
+        setBoard(questions)
+    } else {
+        console.log("incorrect")
+        setBoard(questions)
+        state.which = !state.which
+    }
 }
 
 const setBoard = (q) => {
@@ -41,6 +56,8 @@ const setBoard = (q) => {
     // Update player scores
     $p1score.text(state.player1)
     $p2score.text(state.player2)
+
+    $('li').off() // removes/fixes the compounding listeners
 
     $("li").on('click', (event) => {
         chooseAnswer(event, randomQuestion)
