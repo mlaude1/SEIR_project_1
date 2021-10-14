@@ -83,33 +83,37 @@ h1 {
     line-height: 1; 
 }
 
+#a, #b, #c, #d {
+    transition: box-shadow 0.15s linear;
+}
+
 #a {
-    border: 6px #0077b6 double
+    border: 6px #0077b6 double;
 }
 #a:hover {
     /* text-shadow: 0 0 7px #0096c7, 0 0 7px #0096c7; */
-    box-shadow: 0 0 12px #0096c7;
+    box-shadow: 0 0 20px #0096c7;
 }
 #b {
     border: 6px #7f5539 double
 }
 #b:hover {
     /* text-shadow: 0 0 7px #6c584c, 0 0 7px #6c584c; */
-    box-shadow: 0 0 12px #6c584c;
+    box-shadow: 0 0 20px #6c584c;
 }
 #c {
     border: 6px #fe5d62 double
 }
 #c:hover {
     /* text-shadow: 0 0 7px #fe7b64, 0 0 7px #fe7b64; */
-    box-shadow: 0 0 12px #fe7b64;
+    box-shadow: 0 0 20px #fe7b64;
 }
 #d {
     border: 6px #f4f3ee double
 }
 #d:hover {
     /* text-shadow: 0 0 1px #bfdbf7, 0 0 1px #bfdbf7; */
-    box-shadow: 0 0 12px #ffffff;
+    box-shadow: 0 0 20px #ffffff;
 }
 
 /* ******** SCOREBOARD ******** */
@@ -163,7 +167,7 @@ h1 {
         width: 40%;
     }
     #a, #b, #c, #d {
-        font-size: 9px;
+        font-size: 14px;
     }
     #scores {
         width: 100%;

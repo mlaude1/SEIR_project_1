@@ -49,10 +49,11 @@ console.log('goodbye')
     - adjust line-height ✅ -> added padding-top (slightly extra padding on longer lines, but it's ok)
 - responsive design:
     - used @media (max-width: 615px) ✅
-    - answers in a column? - I had to change width of #answer to 100%
-
+    - answers in a column? - I had to change width of #answer to 100% ✅
+- added a glow effect => transition: box-shadow ✅
 
 - iterate through the array (go through all 20 questions)
 - add a repeat?
 - add an ending point (after going through all questions)
 - add a results screen displaying winner
+- highlight green on selected target, indicating if correct

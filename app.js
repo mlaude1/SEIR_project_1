@@ -26,6 +26,11 @@ const chooseAnswer = (event, question) => {
     console.log(event)
     if(event.target.innerText === question.answer) {
         console.log("correct")
+        // ❌
+        // console.log(event.target)
+        // $('#player1').children().eq(0).css('color','green')
+        // $(event.target)
+
         if (state.which) {
             state.player1++
             state.which = !state.which
@@ -44,7 +49,9 @@ const chooseAnswer = (event, question) => {
 const setBoard = (q) => {
     // Getting a random question
     const randomIndex = Math.floor(Math.random() * q.length)
-    const randomQuestion = q[randomIndex]
+    // const randomQuestion = q[randomIndex]
+    const randomQuestion = q.splice(randomIndex, 1)[0]
+
 
     // Update question
     $question.text(randomQuestion.question)
