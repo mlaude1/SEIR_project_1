@@ -73,26 +73,43 @@ h1 {
     height: 40px;
     background-color: #22223b;
     color: white;
-    padding-top: 15px;
+    padding-top: 28px;
     text-align: center;
     margin: 5px;
     font-weight: bolder;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: fantasy;
+    line-height: 1; 
 }
 
 #a {
     border: 6px #0077b6 double
 }
 #a:hover {
-    
+    /* text-shadow: 0 0 7px #0096c7, 0 0 7px #0096c7; */
+    box-shadow: 0 0 12px #0096c7;
 }
 #b {
     border: 6px #7f5539 double
 }
+#b:hover {
+    /* text-shadow: 0 0 7px #6c584c, 0 0 7px #6c584c; */
+    box-shadow: 0 0 12px #6c584c;
+}
 #c {
-    border: 6px red double
+    border: 6px #fe5d62 double
+}
+#c:hover {
+    /* text-shadow: 0 0 7px #fe7b64, 0 0 7px #fe7b64; */
+    box-shadow: 0 0 12px #fe7b64;
 }
 #d {
-    border: 6px white double
+    border: 6px #f4f3ee double
+}
+#d:hover {
+    /* text-shadow: 0 0 1px #bfdbf7, 0 0 1px #bfdbf7; */
+    box-shadow: 0 0 12px #ffffff;
 }
 
 /* ******** SCOREBOARD ******** */
@@ -122,5 +139,5 @@ h1 {
 }
 
 #player2 img {
-    height: 46px;
+    height: 42px;
 }
