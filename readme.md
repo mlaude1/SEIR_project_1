@@ -38,10 +38,13 @@ console.log('goodbye')
 
 - CHANGE TRIVIA TOPIC (I thought my original one was basic) -> Avatar: The Last Airbender, rewrote questions ✅
 - problem: background image would have white space when the browser window was smaller | solution: background-attachment: fixed ✅
-- give the heading a blue glow
-- center the question container
-- hover: highlight color (water, earth, fire, air)
-- spread the player scores apart
+- give the heading a blue glow ✅
+- center the question container ✅
+- Replace the 'Player" labels with pai sho pieces ✅
+- answers styling
+    - cursor hover: change to click
+    - hover: highlight color (water, earth, fire, air)
+    - increase padding
 
 - iterate through the array (go through all 20 questions)
 - add an ending point (after going through all questions)

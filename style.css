@@ -99,15 +99,28 @@ h1 {
 
 #scores {
     display: flex;
-    width: 70%;
-    background-color: darkslategrey;
+    width: 50%;
+    /* background-color: darkslategrey; */
     justify-content: center;
     margin: 10px auto
 }
 
 #player1, #player2 {
-    width: 40%;
-    background-color: whitesmoke;
+    width: 25%;
+    background: rgba(0,0,0,0.6);
+    color: white;
     margin: 5px;
     text-align: center;
+    border: 2px solid black;
+    backdrop-filter: blur(3px);
+    text-shadow: 0 0 7px #0096c7, 0 0 7px #0096c7;
+    border-radius: 6px;
+}
+
+#player1 img {
+    height: 45px;
+}
+
+#player2 img {
+    height: 46px;
 }
