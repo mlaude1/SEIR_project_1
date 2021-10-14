@@ -36,7 +36,13 @@ console.log('goodbye')
 
 <!-- *** CHANGES AND COMMENTS TO BE LOGGED *** -->
 
-- change vanilla styling
-- change 'document.querySelector' to jQuery? ✅
-- some of the answers overflow out of its border
+- CHANGE TRIVIA TOPIC (I thought my original one was basic) -> Avatar: The Last Airbender, rewrote questions ✅
+- problem: background image would have white space when the browser window was smaller | solution: background-attachment: fixed ✅
+- give the heading a blue glow
+- center the question container
+- hover: highlight color (water, earth, fire, air)
+- spread the player scores apart
+
 - iterate through the array (go through all 20 questions)
+- add an ending point (after going through all questions)
+- add a results screen displaying winner
