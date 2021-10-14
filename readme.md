@@ -47,8 +47,11 @@ console.log('goodbye')
     - increase padding ➖
     - space out the letters ✅
     - adjust line-height ✅ -> added padding-top (slightly extra padding on longer lines, but it's ok)
+- responsive design:
+    - used @media (max-width: 615px) ✅
+    - answers in a column? - I had to change width of #answer to 100%
 
-- make website response
+
 - iterate through the array (go through all 20 questions)
 - add a repeat?
 - add an ending point (after going through all questions)
