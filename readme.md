@@ -34,11 +34,20 @@ console.log('goodbye')
 | cheese 1 | cheese 2 | cheese 3 |
 
 
-<!-- *** CHANGES AND COMMENTS TO BE LOGGED *** -->
+********
 
-- CHANGE TRIVIA TOPIC ✅
-- problem: background image would have white space when the browser window was smaller | solution: background-attachment: fixed ✅
+- CHANGE TRIVIA TOPIC ✅ - I decided to change my original triva theme because ATLA was much more interesting to me
+- problem: background image would have white space when the browser window was smaller | solution: 
+background-attachment: fixed ✅
+```js
+background-attachment: fixed;
+```
+
 - give the heading a blue glow ✅
+```js
+text-shadow: 0 0 15px #0096c7, 0 0 15px #0096c7
+```
+
 - center the question container ✅
 - Replace the 'Player" labels with pai sho pieces ✅
 - answers styling:
