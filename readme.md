@@ -3,29 +3,13 @@
 
 ## Introduction
 
-Explain what your project is here, what it does, etc.
+My project is an Avatar: The Last Airbender themed trivia game where 2 players take turns answering questions. Answering a question correctly earns you 1 point. Getting a question wrong earns you 0 points. There are a total of 20 questions. The player with the most points wins. 
 
 ## Technologies used:
 - HTML
 - CSS
 - JS
 - jQuery 
-
-## Challenges
-
-#### I have trouble with 
-
-My code looked like this
-
-```js
-console.log('hello')
-```
-
-It was giving me a problem... when it was fixed it looked like this: 
-
-```js
-console.log('goodbye')
-```
 
 #### Example Table
 | Column 1 | Column 2 | Column 3 |
@@ -35,9 +19,10 @@ console.log('goodbye')
 
 
 ********
+
 ## Challenges and Solutions
 
-- CHANGE TRIVIA TOPIC ✅ - I decided to change my original triva theme because ATLA was much more interesting to me
+- CHANGE TRIVIA TOPIC - I decided to change my original triva theme because ATLA was much more interesting to me
 
 - Problem: background image would have white space when the browser window was smaller 
 My solution was: 
@@ -45,17 +30,17 @@ My solution was:
 background-attachment: fixed;
 ```
 
-- give the heading a blue glow ✅
+- give the heading a blue glow 
 ```js
 text-shadow: 0 0 15px #0096c7
 ```
 
-- center the question container ✅
+- center the question container 
 ```js
 margin: 10px auto;
 ```
 
-- Replace the 'Player" labels with pai sho pieces ✅
+- Replace the 'Player" labels with pai sho pieces 
 ```html
     - get images from online
     - move them into project folder
@@ -63,11 +48,11 @@ margin: 10px auto;
 ```
 
 - answers styling:
-    - cursor hover: change to click ✅
+    - cursor hover: change to click 
     ```js
     cursor: pointer;
     ```
-    - hover: highlight color (water, earth, fire, air) ✅
+    - hover: highlight color (water, earth, fire, air) 
     ```js
     #a {
         border: 6px #0077b6 double;
@@ -76,29 +61,28 @@ margin: 10px auto;
         box-shadow: 0 0 20px #0096c7;
     ```
     - increase padding ➖
-    - space out the letters ✅
-    - adjust line-height ✅ -> added padding-top (slightly extra padding on longer lines, but it's ok)
+    - space out the letters 
+    - adjust line-height -> added padding-top (slightly extra padding on longer lines, but it's ok)
 
 - responsive design:
 ```js
 @media (max-width: 640px) {
 ```
-    - answers were forced into a column. To keep them in a 4x4 I used:
-    ```js
-    #answer {
-        width: 100%;
-    ```
+- answers were forced into a column. To keep them in a 4x4 I used:
+```js
+#answer {
+    width: 100%;
+```
 
-- to stop getting repeat question:
+- to stop getting repeat question (definitely needed help. Thanks Seb):
 ```js
 const randomQuestion = q.splice(randomIndex, 1)[0]
 ```
-definitely needed help. Thanks Seb
 
-- added a rules button ✅
+- added a rules button 
     - reference: https://www.youtube.com/watch?v=XH5OW46yO8I
 
-## Unsolved issues:
+## Unsolved issues
 - add a results screen displaying winner (alert?) ✅ ❌
     - problem: I used (q.length === 0) to end the game, but this ends the game prematurely with 1 question left. I didn't know how to make it last till the end
 
