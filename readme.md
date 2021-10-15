@@ -57,35 +57,54 @@ margin: 10px auto;
 
 - Replace the 'Player" labels with pai sho pieces ✅
 ```html
+    - get images from online
+    - move them into project folder
 <img src="images/White_lotus_tile_icon.png" alt="white_lotus">
 ```
 
 - answers styling:
     - cursor hover: change to click ✅
+    ```js
+    cursor: pointer;
+    ```
     - hover: highlight color (water, earth, fire, air) ✅
+    ```js
+    #a {
+        border: 6px #0077b6 double;
+    }
+    #a:hover {
+        box-shadow: 0 0 20px #0096c7;
+    ```
     - increase padding ➖
     - space out the letters ✅
     - adjust line-height ✅ -> added padding-top (slightly extra padding on longer lines, but it's ok)
 
 - responsive design:
-    - used @media (max-width: 615px) ✅
-    - answers in a column? - I had to change width of #answer to 100% ✅
+```js
+@media (max-width: 640px) {
+```
+    - answers were forced into a column. To keep them in a 4x4 I used:
+    ```js
+    #answer {
+        width: 100%;
+    ```
 
-- added a glow effect => transition: box-shadow ✅
-
-- iterate through the array (go through all 20 questions) ✅ (definitely needed help from Seb)
+- to stop getting repeat question:
+```js
+const randomQuestion = q.splice(randomIndex, 1)[0]
+```
+definitely needed help. Thanks Seb
 
 - added a rules button ✅
     - reference: https://www.youtube.com/watch?v=XH5OW46yO8I
 
+## Unsolved issues:
 - add a results screen displaying winner (alert?) ✅ ❌
     - problem: I used (q.length === 0) to end the game, but this ends the game prematurely with 1 question left. I didn't know how to make it last till the end
 
 - highlight green on selected target, indicating if correct❌
 
-- rules pop-up janky on smaller devices in landscape ❌ 
-
-- edit markdown ❌
+- rules pop-up is janky on smaller devices in landscape ❌ 
 
 ## Future additions
 - add info buttons for all the 4 nations (lore)
