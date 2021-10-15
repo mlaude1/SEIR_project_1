@@ -51,9 +51,19 @@ console.log('goodbye')
     - used @media (max-width: 615px) ✅
     - answers in a column? - I had to change width of #answer to 100% ✅
 - added a glow effect => transition: box-shadow ✅
+- iterate through the array (go through all 20 questions) ✅ (definitely needed help from Seb)
+- added a rules button ✅
+    - reference: https://www.youtube.com/watch?v=XH5OW46yO8I
+- add a results screen displaying winner (alert?) ✅ ❌
+    - problem: I used (q.length === 0) to end the game, but this ends the game prematurely with 1 question left. I didn't know how to make it last till the end
+- edit markdown ❌
 
-- iterate through the array (go through all 20 questions)
-- add a repeat?
-- add an ending point (after going through all questions)
-- add a results screen displaying winner
-- highlight green on selected target, indicating if correct
+
+- highlight green on selected target, indicating if correct❌
+- add a repeat? ➖
+- make questions a little harder: 
+    1) add an Iroh question? ✅
+    2) banana and onion juice ✅
+    3) where is Zuko's scar? +alert
+    4) blind bandit?
+    5) Appa's giddiyap

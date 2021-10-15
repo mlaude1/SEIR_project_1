@@ -4,7 +4,8 @@ const state = {
     player1: 0,
     player2: 0,
     // currentQuestion: {},
-    which: true
+    which: true,
+    // quit: false
 }
 
 let questions = []
@@ -50,7 +51,7 @@ const setBoard = (q) => {
     // Getting a random question
     const randomIndex = Math.floor(Math.random() * q.length)
     // const randomQuestion = q[randomIndex]
-    const randomQuestion = q.splice(randomIndex, 1)[0]
+    const randomQuestion = q.splice(randomIndex, 1)[0] // 🤯 simple yet mindblowing
 
 
     // Update question
@@ -69,7 +70,36 @@ const setBoard = (q) => {
     $("li").on('click', (event) => {
         chooseAnswer(event, randomQuestion)
     })
+
+    // ❗️
+    console.log(q.length)
+    if (q.length === 0) {
+        if (state.player1 === state.player2) {
+            alert(`It's a tie!`)
+        } else if (state.player2 > state.player1) {
+            alert(`Player 2 wins with ${state.player2} points!`)
+        } else if (state.player1 > state.player2) {
+            alert(`Player 1 wins with ${state.player1} points!`)
+        }
+    }
+
+    // ❗️
 }
+
+
+// Rules
+const open = document.getElementById('open');
+const modal_container = document.getElementById('modal_container');
+const close = document.getElementById('close');
+
+open.addEventListener('click', ()=> {
+    modal_container.classList.add('show');
+});
+
+close.addEventListener('click', ()=> {
+    modal_container.classList.remove('show');
+});
+
 
 
 // Main App Logic //

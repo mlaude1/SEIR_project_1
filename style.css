@@ -83,7 +83,7 @@ h1 {
     line-height: 1; 
 }
 
-#a, #b, #c, #d {
+#a, #b, #c, #d, #open, #close {
     transition: box-shadow 0.15s linear;
 }
 
@@ -144,6 +144,60 @@ h1 {
 
 #player2 img {
     height: 42px;
+}
+
+#open {
+    cursor: pointer;
+}
+#open:hover {
+    box-shadow: 0 0 20px #fe7b64;
+}
+
+#close {
+    cursor: pointer;
+}
+#close:hover {
+    box-shadow: 0 0 20px #fe7b64;
+}
+
+.modal-container {
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+button {
+    background-color:cornflowerblue;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px 25px;
+    box-shadow: 0 2px 4 px rgba (0,0,0,0.2);
+    font-size: 14px;
 }
 
 @media (max-width: 640px) {
